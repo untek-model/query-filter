@@ -3,6 +3,7 @@
 namespace Untek\Model\QueryFilter\Helpers;
 
 use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 use Untek\Model\Entity\Helpers\EntityHelper;
 use Untek\Model\Query\Entities\Query;
 use Untek\Model\Query\Entities\Where;
@@ -11,6 +12,8 @@ use Untek\Model\QueryFilter\Interfaces\DefaultSortInterface;
 use Untek\Model\QueryFilter\Interfaces\IgnoreAttributesInterface;
 use Untek\Model\Validator\Exceptions\UnprocessibleEntityException;
 use Untek\Model\Validator\Helpers\ValidationHelper;
+
+DeprecateHelper::hardThrow();
 
 class FilterModelHelper
 {

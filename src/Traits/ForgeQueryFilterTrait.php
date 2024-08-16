@@ -3,10 +3,13 @@
 namespace Untek\Model\QueryFilter\Traits;
 
 use Psr\EventDispatcher\EventDispatcherInterface;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 use Untek\Model\Shared\Enums\EventEnum;
 use Untek\Model\Shared\Events\QueryEvent;
 use Untek\Model\Query\Entities\Query;
 use Untek\Model\QueryFilter\Helpers\FilterModelHelper;
+
+DeprecateHelper::hardThrow();
 
 trait ForgeQueryFilterTrait
 {
